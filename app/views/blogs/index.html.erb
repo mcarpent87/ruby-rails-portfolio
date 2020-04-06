@@ -1,22 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Blog Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="col-sm-8 blog-main">
+    
     <%= render @blogs %>
-  </tbody>
-</table>
 
-<br>
+  <nav class="blog-pagination">
+    <a class="btn btn-outline-primary" href="#">Older</a>
+    <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+  </nav>
 
-<%= link_to 'New Blog', new_blog_path %>
+</div>
