@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-block">
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8", style="left: 010px;">
         <h2>Edit <%= resource_name.to_s.humanize %></h2>
     
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -53,7 +53,7 @@
       </div>
     </div>
     
-    <div class="auth-links">
+    <div class="auth-links", "margin-left: 010px;" style="margin-left: 10px;">
       <%= link_to "Back", :back %>
     </div>
   </div>
