@@ -1,4 +1,5 @@
 @import "bootstrap";
+
 /*
  * Globals
  */
@@ -33,14 +34,18 @@ body {
 
 body {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .cover-container {
-  max-width: 55rem;
+  max-width: 55em;
 }
 
 
@@ -53,6 +58,7 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  padding-right: 5em; 
 }
 
 .nav-masthead .nav-link {
@@ -104,4 +110,30 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+*Custom styles
+*/
+
+.card-block {
+  color: black;
+  text-align: left; 
+}
+
+.auth-links {
+  color: black;
+  text-align: right;
+}
+
+.auth-links a {
+  color: black;
+}
+
+.card-header {
+  color:black;
+}
+
+.form-group {
+  color: black;
 }
