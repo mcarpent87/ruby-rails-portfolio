@@ -123,11 +123,25 @@ body {
 
 .auth-links {
   color: black;
-  text-align: right;
+  //text-align: right;
 }
 
-.auth-links a {
+.auth-links {
   color: black;
+  margin-left: 10px; 
+}
+
+.auth-links-login a {
+  color: black;
+  margin-left: 10px; 
+}
+
+.login-title {
+  margin-top: 10px; 
+}
+
+.auth-links-login {
+  margin-bottom: 10px; 
 }
 
 .card-header {
@@ -136,4 +150,18 @@ body {
 
 .form-group {
   color: black;
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.login > .card {
+  float: none;
+  margin: 0 auto; 
+  margin-top: 100px; 
+  width: 22rem;
+}
+
+.login-title {
+  margin-left: 10px;
+  text-align: center;
 }
