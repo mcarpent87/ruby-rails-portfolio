@@ -20,6 +20,16 @@
 
         <div id="background"></div>
 
+          <%= video_tag(
+            'HardDrivePhotojpeg.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+          )
+          %>
+
           <%= render "shared/application_nav" %>
 
           <%= yield %>
