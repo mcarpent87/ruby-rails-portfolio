@@ -1,9 +1,16 @@
 <%= form_for(@portfolio_item) do |f| %>
   <% if @portfolio_item.errors.any? %>
-    <%= @portfolio_item.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "McLean Carpenter Portfolio", sticky: false) %>
+    <% @portfolio_item.errors.full_messages.each do |error| %>
+      <%= alert_generator error %>
     <% end %>
   <% end %>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+      </div>
 
       <div class="form-group">
         <%= f.label :subtitle %>
@@ -17,13 +24,13 @@
       </div>
 
       <div class="form-group">
-      <label class="btn btn-primary">
-      Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
-    </label>
+        <label class="btn btn-primary">
+          Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
+        </label>
       </div>
     </div>
 
-  <div class="col-md-6">
+    <div class="col-md-6">
       <div class="form-group">
         <%= f.label :body %>
         <%= f.text_area :body, class: 'form-control', rows: 13 %>
@@ -37,12 +44,12 @@
     <h2>Technolgies Used:</h2>
     <div>
       <%= f.fields_for :technologies do |technology_form| %>
-        <%= render 'technology_fields', f: technology_form %> 
+        <%= render 'technology_fields', f: technology_form %>
       <% end %>
 
-      <div> 
+      <div>
         <%= link_to_add_association 'Add Technology', f, :technologies %>
-      </div> 
+      </div>
     </div>
 
     <div class="form-group">
