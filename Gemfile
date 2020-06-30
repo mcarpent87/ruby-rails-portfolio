@@ -51,7 +51,7 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.7'
 gem 'bootstrap', '~> 4.3.1'
@@ -65,5 +65,6 @@ gem 'carrierwave-aws', '~> 1.5'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
 gem 'cocoon', '~> 1.2', '>= 1.2.14'
 gem 'gritter', '~> 1.2'
+gem 'redis', '~> 3.3', '>= 3.3.1'
 
 ruby "2.6.3"
