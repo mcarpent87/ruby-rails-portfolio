@@ -1,0 +1,12 @@
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">Placeholder title</h1>
+    <p class="lead blog-description">Placholder description</p>
+    <span>
+      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+    </span>
+    <span>
+      <%= link_to "Topics", topics_path %>
+    </span>
+  </div>
+</div>
