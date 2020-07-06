@@ -1,10 +1,12 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'Software development is the closest concept we have to magic.'
-      "It's my goal to ensure that anyone with a passion for coding can become a true programming artisan."
+      'I am a Data Scientist.'
+      "I am a Full Stack Developer."
+      "I am a Data Engineer."
+      "I am a technical professional."
     ]
-    typeSpeed: 0
+    typeSpeed: 50
   return
 
 $(document).ready ready
