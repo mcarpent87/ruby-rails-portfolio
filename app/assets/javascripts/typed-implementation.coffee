@@ -1,10 +1,9 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'I am a Data Scientist.'
-      "I am a Full Stack Developer."
-      "I am a Data Engineer."
+      "I am a Full Stack Software Engineer."
       "I am a technical professional."
+      "I am a problem solver."
     ]
     typeSpeed: 50
   return
