@@ -52,10 +52,10 @@ class PortfoliosController < ApplicationController
   end
 
   def destroy
-    # Destroy/delete the record
+    # Destroy/delete portfolio record
     @portfolio_item.destroy
 
-    # Redirect
+    # Redirect to the portfolios page after destroying a record from the database
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
@@ -63,6 +63,7 @@ class PortfoliosController < ApplicationController
 
   private
 
+  # Require these parameters when creating a new record
   def portfolio_params
     params.require(:portfolio).permit(:title,
                                       :subtitle,

@@ -173,10 +173,23 @@ h6, .h6 {
  * Custom Styles
  */
 
+ .card-home {
+  opacity: 0.8;
+}
+
 .card-block {
   color: black;
   text-align: left;
 }
+
+.card-block-login-page {
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 
 .auth-links a {
   color: black;
@@ -213,6 +226,7 @@ h6, .h6 {
 }
 
 .app-footer {
+  bottom: 0;
   color: white;
 }
 
